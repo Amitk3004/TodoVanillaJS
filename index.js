@@ -50,13 +50,13 @@ function removeFromLocalStorage(itemName) {
 }
 
 function saveToLocalStorage(itemName) {
-    let savedList = localStorage.getItem('todoList');
+    let savedList = localStorage.getItem(localStorageKey);
     if (savedList){
         let parseList = JSON.parse(savedList);
         parseList.push(itemName);
-        localStorage.setItem('todoList', JSON.stringify(parseList));
+        localStorage.setItem(localStorageKey, JSON.stringify(parseList));
     } else {
-        localStorage.setItem('todoList', JSON.stringify([itemName]));
+        localStorage.setItem(localStorageKey, JSON.stringify([itemName]));
     }
 }
 
