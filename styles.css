@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    background-color: aquamarine;
+    color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+    padding-left: 10px;
+}
+
+.result_wrapper {
+    padding: 5px 10px;
+}
+
+.result_list {
+    padding: 0;
+}
+
+.addTaskBtn {
+    background-color: lightgreen;
+    color: black;
+    border-radius: 5px;
+    width: 20%;
+    border: 1px solid lightgreen;
+}
+
+section {
+    padding: 5% 30%;
+}
+
+.result_list_item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.result_list_item a {
+    text-decoration: none;
+}
+
